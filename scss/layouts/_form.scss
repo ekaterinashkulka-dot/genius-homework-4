@@ -1,0 +1,55 @@
+.form {
+  &__field {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: block;
+    color: var(--color-primary-light);
+  }
+
+  &__input {
+    padding: 18px 32px;
+    width: 100%;
+    border-radius: 32px;
+    border: 2px solid var(--color-border);
+    background-color: transparent;
+    transition: background 0.3s;
+
+    &::placeholder {
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    &:focus {
+      background: var(--color-border);
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+
+    &:hover {
+      background-color: var(--color-brand-light);
+    }
+  }
+
+  &__terms {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 213px;
+    color: var(--color-border);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__terms-link {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 213px;
+    color: var(--color-border);
+    text-align: center;
+    margin: 0 auto;
+  }
+}

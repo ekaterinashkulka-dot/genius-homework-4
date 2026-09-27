@@ -1,0 +1,19 @@
+.address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__icons-item {
+    fill: var(--color-primary-light);
+  }
+}

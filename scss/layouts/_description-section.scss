@@ -1,0 +1,89 @@
+.description-section {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__content {
+    max-width: 709px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 1.7;
+  }
+
+  &__photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/star-large.png);
+      background-repeat: no-repeat;
+      width: 64px;
+      height: 64px;
+      left: 100px;
+      top: 350px;
+      animation-name: increase;
+      animation-duration: 2s;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../images/star-medium.png);
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      right: -40px;
+      animation-name: increase;
+      animation-duration: 2s;
+    }
+  }
+
+  &__image-before,
+  &__image-after {
+    width: 327px;
+    height: 327px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__image-after {
+    margin-left: 172px;
+  }
+
+  &__star-small {
+    position: absolute;
+    content: "";
+    background-image: url(../images/star-small.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    right: 10px;
+    top: 250px;
+    animation-name: increase;
+    animation-duration: 2s;
+  }
+
+  @keyframes increase {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

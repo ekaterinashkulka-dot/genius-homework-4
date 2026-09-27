@@ -1,0 +1,14 @@
+.section-title {
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-title:not(.description-title) {
+  text-align: center;
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}

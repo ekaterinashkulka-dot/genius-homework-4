@@ -1,0 +1,25 @@
+.contact-section {
+  &__title {
+    margin-bottom: 48px 0;
+  }
+
+  &__form {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__map {
+    width: 605px;
+    height: 481px;
+    border: 1px;
+    border-radius: 32px;
+  }
+
+  &__form-wrapper {
+    width: 422px;
+    padding: 48px 56px;
+    background-color: var(--color-brand-dark);
+    border-radius: 32px;
+  }
+}

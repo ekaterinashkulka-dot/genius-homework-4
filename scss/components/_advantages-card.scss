@@ -1,0 +1,19 @@
+.advantages-card {
+  width: 316px;
+  height: 181px;
+  box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
+  border-radius: 32px;
+  background-color: var(--color-primary-light);
+  margin: 0;
+  padding: 24px 32px;
+}
+.advantages-text {
+  color: var(--color-secondary-dark);
+  text-align: center;
+}
+
+.advantages-icon {
+  fill: var(--color-brand-light);
+  display: block;
+  margin: 0 auto 8px;
+}

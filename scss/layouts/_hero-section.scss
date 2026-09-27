@@ -1,0 +1,25 @@
+.hero-section {
+  padding: 126px;
+  margin-bottom: 40px;
+  background-image: url("../images/hero-background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__title {
+    color: var(--color-brand-light);
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1.3;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+    color: var(--color-brand-dark);
+  }
+
+  &__record {
+    font-size: 12px;
+  }
+}
