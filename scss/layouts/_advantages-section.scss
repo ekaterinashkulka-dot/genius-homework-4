@@ -1,6 +1,6 @@
 .advantages-section {
   position: relative;
-
+  overflow-x: clip;
   &__background {
     position: absolute;
     z-index: -1;
@@ -11,12 +11,25 @@
   }
 
   &__title {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 48px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: center;
-    gap: 56px;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+    }
   }
 }
