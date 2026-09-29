@@ -1,22 +1,36 @@
 .procedure-section {
+  padding: 48px 0;
   &__title {
     margin-bottom: 48px;
+    text-align: center;
   }
 
-  &__container {
+  &__slider {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 32px;
   }
 
+  &__container {
+    overflow: hidden;
+  }
+
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__button.carousel-button {
+    display: none;
+    flex-shrink: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
   }
 
   &__item {
-    width: 344px;
+    display: flex;
+    justify-content: center;
   }
 }

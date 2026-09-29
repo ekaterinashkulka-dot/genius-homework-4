@@ -2,7 +2,8 @@
   position: relative;
   font-size: 22px;
   line-height: 1.2;
-  width: 344px;
+  width: 100%;
+  max-width: 344px;
   height: 456px;
   background: linear-gradient(
     180.05deg,
@@ -11,11 +12,6 @@
     var(--color-brand-dark) 101.39%
   );
   border-radius: 4px 120px;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   &__image {
     z-index: -1;
